@@ -64,4 +64,24 @@ nav button {
 nav button:hover {
   opacity: 0.7;
 }
+
+@media (min-width: 950px) {
+  .btn,
+  .links {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .btn,
+  .links {
+    display: none;
+  }
+  .menu {
+    display: inline;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
