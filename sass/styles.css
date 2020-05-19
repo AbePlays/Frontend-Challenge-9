@@ -16,5 +16,52 @@
 
 body {
   font-size: 1.125rem;
+  font-family: "Public Sans", sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem 0;
+}
+
+nav .links a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #9698a6;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+nav .links a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+nav .links a:hover {
+  color: #2d314d;
+}
+
+nav button {
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  height: 2.5rem;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+nav button:hover {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=styles.css.map */
