@@ -81,7 +81,7 @@ nav button:hover {
     display: none;
   }
   .menu {
-    display: inline;
+    display: block;
   }
 }
 /*# sourceMappingURL=styles.css.map */
