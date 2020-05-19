@@ -13,4 +13,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  font-size: 1.125rem;
+}
 /*# sourceMappingURL=styles.css.map */
