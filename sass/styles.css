@@ -29,22 +29,29 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.8rem 0;
+  height: 4rem;
 }
 
 nav .links a {
   font-size: 0.9rem;
   text-decoration: none;
   color: #9698a6;
+  padding-bottom: 1.2rem;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
 nav .links a:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1.6rem;
 }
 
 nav .links a:hover {
   color: #2d314d;
+  border-bottom: 0.2rem solid #31d35c;
+}
+
+nav .menu {
+  cursor: pointer;
 }
 
 nav button {
