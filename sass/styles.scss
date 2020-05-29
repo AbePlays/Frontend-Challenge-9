@@ -12,6 +12,7 @@ body {
 }
 
 nav {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -33,6 +34,34 @@ nav {
       &:hover {
         color: $darkblue;
         border-bottom: 0.2rem solid $limegreen;
+      }
+    }
+  }
+
+  .open {
+    padding: 2rem 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    right: 1rem;
+    height: fit-content;
+
+    a {
+      display: block;
+      padding-bottom: 0;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        padding-bottom: 2rem;
+      }
+
+      &:hover {
+        border: none;
       }
     }
   }
@@ -71,6 +100,10 @@ nav {
   }
 
   .menu {
+    display: none;
+  }
+
+  .cross {
     display: none;
   }
 }
