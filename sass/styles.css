@@ -109,14 +109,10 @@ nav button:hover {
 }
 
 @media (min-width: 950px) {
-  .btn,
-  .links {
+  .btn {
     display: block;
   }
-  .menu {
-    display: none;
-  }
-  .cross {
+  .toggle {
     display: none;
   }
 }

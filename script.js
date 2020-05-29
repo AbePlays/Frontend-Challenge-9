@@ -3,6 +3,7 @@ const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
 const cross = document.querySelector(".cross");
 const links = document.querySelector(".links");
+const btn = document.querySelector(".btn");
 console.log(links);
 
 toggle.addEventListener("click", () => {
@@ -18,3 +19,17 @@ toggle.addEventListener("click", () => {
     links.classList.add("open");
   }
 });
+
+function myFunction(x) {
+  if (x.matches) {
+    links.classList.remove("open");
+    menu.style.display = "block";
+    cross.style.display = "none";
+    main.style.background = "none";
+  } else {
+  }
+}
+
+var x = window.matchMedia("(min-width: 950px)");
+myFunction(x);
+x.addListener(myFunction);
